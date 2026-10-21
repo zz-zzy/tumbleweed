@@ -32,6 +32,16 @@ hugo new content en/posts/my-post.md
 
 > 如果仓库名或账号不同：改 `hugo.toml` 的 `baseURL`、`params.utterances.repo` 和本文件里的链接。
 
+### 网络不通时用脚本发布
+
+如果你的网络无法直连 `github.com`（git push 超时），但 `gh` 能用，直接跑：
+
+```powershell
+pwsh -File publish.ps1 -Message "更新内容"
+```
+
+它会走 GitHub 的 API（`api.github.com`）把当前工作区整体发布并触发部署，不依赖 `git push`。
+
 ## 评论（utterances）
 
 评论存在仓库的 Issues 里：
