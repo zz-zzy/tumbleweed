@@ -55,7 +55,7 @@ $commitBody = @{
 $commit = gh api --method POST "repos/$Repo/git/commits" --input $commitJson | ConvertFrom-Json
 
 # 7. 更新分支（fast-forward）
-gh api --method PATCH "repos/$Repo/git/refs/heads/$Branch" -f sha=$commit.sha | Out-Null
+gh api --method PATCH "repos/$Repo/git/refs/heads/$Branch" -f "sha=$($commit.sha)" | Out-Null
 
 Write-Host "已发布: $($commit.sha)  (共 $($files.Count) 个文件)"
 Write-Host "地址: https://zz-zzy.github.io/tumbleweed/"
