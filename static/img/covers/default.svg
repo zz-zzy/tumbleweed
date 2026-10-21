@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f2024"/>
+      <stop offset="60%" stop-color="#2e2e33"/>
+      <stop offset="100%" stop-color="#45454f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.08" stroke="#ffffff" stroke-width="2">
+    <path d="M0 470 L1200 300"/>
+    <path d="M0 540 L1200 370"/>
+    <path d="M0 610 L1200 440"/>
+  </g>
+  <text x="90" y="300" font-family="Georgia, 'Times New Roman', serif" font-size="86" fill="#f5f5f5">Tumbleweed</text>
+  <text x="94" y="362" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#b9b9c3">AI Agent · RAG · LLM Engineering</text>
+</svg>

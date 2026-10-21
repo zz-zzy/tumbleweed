@@ -1,0 +1,4 @@
+{{- /* 按需加载 MathJax：文章 front matter 里写 math: true 即可 */ -}}
+{{- if or .Params.math site.Params.math -}}
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{{- end -}}

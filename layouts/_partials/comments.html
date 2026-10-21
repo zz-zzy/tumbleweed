@@ -1,0 +1,16 @@
+{{- /* utterances：基于 GitHub Issues 的评论，无需自建后端 */ -}}
+{{- $u := site.Params.utterances -}}
+{{- if $u.repo -}}
+<div class="post-comments">
+  <script src="https://utteranc.es/client.js"
+          repo="{{ $u.repo }}"
+          issue-term="{{ $u.issueTerm | default "pathname" }}"
+          label="{{ $u.label | default "comment" }}"
+          theme="{{ $u.theme | default "preferred-color-scheme" }}"
+          crossorigin="anonymous"
+          async>
+  </script>
+</div>
+{{- else -}}
+<p class="post-comment-hint">评论尚未配置：在 <code>hugo.toml</code> 里填写 <code>params.utterances.repo</code>。</p>
+{{- end -}}

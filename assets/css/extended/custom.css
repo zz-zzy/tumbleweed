@@ -1,0 +1,50 @@
+/* 中文排版微调；PaperMod 会自动合并 assets/css/extended/ 下的样式 */
+
+:root {
+    --content-gap: 22px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.post-content {
+    line-height: 1.85;
+    letter-spacing: 0.01em;
+}
+
+.post-content h2 {
+    margin-top: 2.2rem;
+}
+
+.post-content h3 {
+    margin-top: 1.6rem;
+}
+
+.post-content p {
+    margin: 0.9rem 0;
+}
+
+.post-content li {
+    margin: 0.3rem 0;
+}
+
+.post-comments {
+    margin-top: 2rem;
+}
+
+/* 首页 profile 之下的文章列表 */
+.main .profile {
+    min-height: 52vh;
+    padding-bottom: 1rem;
+}
+
+.home-posts {
+    margin-top: 1rem;
+}
+
+.home-posts .first-entry {
+    margin-top: 0;
+}
